@@ -1,1 +1,3 @@
-# Airbnb-Carbon-copy
+This is a static Airbnb carbon copy website. 
+
+Work in progress................................................................
