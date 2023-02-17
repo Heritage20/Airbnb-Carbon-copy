@@ -69,6 +69,17 @@ a:hover {
   letter-spacing: normal;
 }
 
+.header-title2 {
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 1.3rem;
+  font-weight: 700;
+}
+
+.header-title2 a {
+  text-decoration: underline;
+}
+
 .header-text-list {
   list-style-type: none;
   border-right: 2px solid #dee2e6;
@@ -85,11 +96,13 @@ a:hover {
 
 .margin-b {
   margin-bottom: 1.5em;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 2;
   background-color: #fff;
+
+  /* outline: dashed red; */
 }
 
 .logo-name {
@@ -412,8 +425,8 @@ h4 {
 
 .filter-modal {
   position: relative;
-  width: 50%;
-  height: 43vw;
+  width: 50rem;
+  height: 43rem;
   margin: 2rem auto;
 
   display: flex;
@@ -1055,7 +1068,9 @@ h4 {
   gap: 1.4rem;
   cursor: pointer;
 
-  margin-top: 14rem;
+  /* outline: dashed red; */
+
+  /* margin-top: 14rem; */
 }
 
 .carousel-container {
@@ -1257,4 +1272,70 @@ footer {
 .footer a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media screen and (max-width: 728px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .carousel-container {
+    max-width: 23rem;
+  }
+
+  .user-text,
+  .bx-globe {
+    visibility: hidden;
+  }
+
+  .filter-modal {
+    width: 45rem;
+    height: 37rem;
+  }
+}
+
+@media screen and (max-width: 1236px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carousel-container {
+    max-width: 20rem;
+    width: 30rem;
+  }
+
+  .chips-btn-right {
+    right: 16%;
+  }
+}
+
+@media screen and (max-width: 1432px) {
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .carousel-container {
+    max-width: 23rem;
+  }
+
+  .chips-btn-right {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    grid-template-columns: 1fr !important;
+  }
+
+  .filter-modal {
+    width: 35rem;
+    height: 35rem;
+  }
 }
